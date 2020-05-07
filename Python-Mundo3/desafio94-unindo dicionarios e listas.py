@@ -40,4 +40,5 @@ for p in galera:
     if p['sexo'] == 'F':
         print(f'{p["nome"]}', end=", ")
 print()
+print(f'D) pessoas acima da media')
 
