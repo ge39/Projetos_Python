@@ -10,7 +10,7 @@ D - Uma lista com todas as pessoas com idade acima da média.
 '''
 pessoa = dict()
 galera = list()
-
+soma = media = 0
 while True:
     pessoa.clear()
     pessoa['nome'] = str(input("Nome :").upper())
@@ -20,13 +20,24 @@ while True:
             break
         print(f'ERROR!,por favor, digite apenas M ou F')
     pessoa['idade'] = int(input('idade: '))
+    soma += pessoa['idade']
+    galera.append(pessoa.copy())
     while True:
         resp = str(input('Deseja continuar? [S/N]: ').upper())
         if resp in 'SN':
              break
         print("ERROR! Responda S ou N.")
-    if resp in 'SN':
+    if resp in 'N':
         break
 print('=-'*30)
-print(pessoa)
+print(galera)
+print('=-'*30)
+print(f'A) Total de pessoas cadastradas: {len(galera)} pessoas')
+media = soma / len(galera)
+print(f'B) A média de idade: {media:5.1f} anos')
+print(f'C) As mulheres cadastradas foram ', end=" ")
+for p in galera:
+    if p['sexo'] == 'F':
+        print(f'{p["nome"]}', end=", ")
+print()
 
