@@ -50,7 +50,8 @@ print()
 # D - Uma lista com todas as pessoas com idade acima da média.
 print(f'D) pessoas acima da media', end=" ")
 for p in galera:
-    if p['idade'] > media:
+    if p['idade'] >= media:
         print(f'{p["nome"]};sexo {p["sexo"]}; idade {p["idade"]}', end=" ")
+print('<<<<ENCERRADO>>>>')
 
 
