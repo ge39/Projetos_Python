@@ -41,17 +41,19 @@ media = soma / len(galera)
 print(f'B) A média de idade: {media:5.1f} anos')
 
 # C - Uma lista com todas as mulheres
-print(f'C) As mulheres cadastradas foram ', end=" ")
+print(f'C) As mulheres cadastradas foram: ', end=" ")
 for p in galera:
     if p['sexo'] == 'F':
         print(f'{p["nome"]}', end=", ")
 print()
 
 # D - Uma lista com todas as pessoas com idade acima da média.
-print(f'D) pessoas acima da media', end=" ")
+print(f'D) pessoas acima da media: ', end=" ")
 for p in galera:
     if p['idade'] >= media:
-        print(f'{p["nome"]};sexo {p["sexo"]}; idade {p["idade"]}', end=" ")
+        for k,v in p.items():
+            print(f'{k} = {v};', end=" ")
+        print()
 print('<<<<ENCERRADO>>>>')
 
 
