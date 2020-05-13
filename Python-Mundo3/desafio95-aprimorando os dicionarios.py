@@ -22,7 +22,10 @@ for p in range(0, tot):
 jogador['partidas'] = tot
 jogador['gols'] = gols[:]
 jogador['total'] = sum(gols)
+#print(jogador)
 
-print(jogador)
+for k, v in jogador.items():
+    print(f"Valor {k} => {v}")
+
 
 
