@@ -16,7 +16,7 @@ de cada jogador
 jogador = dict()
 gols = list()
 
-while True:
+for resp in 'Ss':
     jogador['nome'] = str(input("NOME: ").upper())
     tot = int(input(f"Numero de partida do {jogador['nome']}: "))
     for p in range(0, tot):
@@ -25,9 +25,9 @@ while True:
     jogador['gols'] = gols[:]
     jogador['total'] = sum(gols)
     #print(jogador)
-
+    resp = str(input("Deseja continuar[S/N] ").upper())[0]
     while True:
-        resp = str(input("Deseja continuar[S/N] ").upper())[0]
+        #resp = str(input("Deseja continuar[S/N] ").upper())[0]
         if resp not in 'SN':
             print('ERROR: Utilize S ou N.')
         if resp == 'N':
