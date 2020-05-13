@@ -15,17 +15,25 @@ de cada jogador
 '''
 jogador = dict()
 gols = list()
-jogador['nome'] = str(input("NOME: ").upper())
-tot = int(input(f"Numero de partida do {jogador['nome']}: "))
-for p in range(0, tot):
-    gols.append(int(input(f"QUANTOS GOLS NA {p+1}ª partida: ")))
-jogador['partidas'] = tot
-jogador['gols'] = gols[:]
-jogador['total'] = sum(gols)
-#print(jogador)
 
-for k, v in jogador.items():
-    print(f"Valor {k} => {v}")
+while True:
+    jogador['nome'] = str(input("NOME: ").upper())
+    tot = int(input(f"Numero de partida do {jogador['nome']}: "))
+    for p in range(0, tot):
+        gols.append(int(input(f"QUANTOS GOLS NA {p+1}ª partida: ")))
+    jogador['partidas'] = tot
+    jogador['gols'] = gols[:]
+    jogador['total'] = sum(gols)
+    #print(jogador)
+
+    while True:
+        resp = str(input("Deseja continuar[S/N] ").upper())[0]
+        if resp not in 'SN':
+            print('ERROR: Utilize S ou N.')
+        if resp == 'N':
+            break
+    for k, v in jogador.items():
+        print(f"Valor {k} => {v}")
 
 
 
