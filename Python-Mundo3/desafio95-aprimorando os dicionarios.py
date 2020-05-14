@@ -13,27 +13,50 @@ Aprimore o desafio 93, para que ele funcione com varios jogadores,
 incluindo um sistema de visualização de detalhes do aproveitamento
 de cada jogador
 '''
+time = list()
 jogador = dict()
-gols = list()
+partidas = list()
 
-for resp in 'Ss':
+while True:
+    jogador.clear()
     jogador['nome'] = str(input("NOME: ").upper())
     tot = int(input(f"Numero de partida do {jogador['nome']}: "))
+    partidas.clear()
     for p in range(0, tot):
-        gols.append(int(input(f"QUANTOS GOLS NA {p+1}ª partida: ")))
-    jogador['partidas'] = tot
-    jogador['gols'] = gols[:]
-    jogador['total'] = sum(gols)
+        partidas.append(int(input(f"QUANTOS GOLS NA {p + 1}ª partida: ")))
+    #jogador['partidas'] = tot
+    jogador['gols'] = partidas[:]
+    jogador['total'] = sum(partidas)
+    time.append(jogador.copy())
     #print(jogador)
-    resp = str(input("Deseja continuar[S/N] ").upper())[0]
     while True:
-        #resp = str(input("Deseja continuar[S/N] ").upper())[0]
-        if resp not in 'SN':
-            print('ERROR: Utilize S ou N.')
-        if resp == 'N':
+        resp = str(input("Deseja continuar[S/N] ").upper())[0]
+        if resp in 'SN':
             break
-    for k, v in jogador.items():
-        print(f"Valor {k} => {v}")
+        print('ERROR: Utilize S ou N.')
+    if resp == 'N':
+        break
+#cabeçalho
+print('cod ', end="")
+for i in jogador.keys():
+    print(f'{i:<15}', end="")
+print()
+#fim cabeçalho
+print('-' *40)
+for k, v in enumerate(time):
+    print(f"{k:>2} ", end="")
+    for d in v.values():
+        print(f'{str(d):<15}', end="")
+    print()
+print('-'*40)
+while True:
+    busca = int(input('Mostrar dados de qual jogador(999 para parar): '))
+    if busca =='999':
+        break
+    if busca >= len(time):
+        print(f'ERROR! Não existe jogador com o código {busca}!')
+    else:
+        print(f'-- LEVANTAMENTO DO JOGADOR {time[busca]["nome"]}--')
 
 
 
