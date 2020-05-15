@@ -25,9 +25,9 @@ while True:
     for p in range(0, tot):
         partidas.append(int(input(f"QUANTOS GOLS NA {p + 1}ª partida: ")))
     #jogador['partidas'] = tot
-    jogador['gols'] = partidas[:]
-    jogador['total'] = sum(partidas)
-    time.append(jogador.copy())
+    jogador['gols'] = partidas[:] # adiciona no dicionario jogador, os gols de cada partida
+    jogador['total'] = sum(partidas) # soma dos gols das partidas
+    time.append(jogador.copy())     # feito uma copia todos os dados do dicionario jogador para a  lista time,
     #print(jogador)
     while True:
         resp = str(input("Deseja continuar[S/N] ").upper())[0]
@@ -50,13 +50,16 @@ for k, v in enumerate(time):
     print()
 print('-'*40)
 while True:
-    busca = int(input('Mostrar dados de qual jogador(999 para parar): '))
-    if busca =='999':
+    busca = int(input('Mostrar dados de qual jogador? (999 para parar): '))
+    if busca == 999:
         break
     if busca >= len(time):
         print(f'ERROR! Não existe jogador com o código {busca}!')
     else:
         print(f'-- LEVANTAMENTO DO JOGADOR {time[busca]["nome"]}--')
-
+        for i, g in enumerate(time[busca]["gols"]):
+            print(f' No jogo {i+1}, fez {g} gols.')
+    print('-'*40)
+print('<<<VOLTE SEMPRE>>>')
 
 
