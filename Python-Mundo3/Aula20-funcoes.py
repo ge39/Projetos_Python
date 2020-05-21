@@ -2,7 +2,7 @@
 
 #  funcoes ou rotinas
 def linha():
-    print('linha - ' * 10)
+    print('*-' * 40)
 
 linha()
 
@@ -45,10 +45,25 @@ def contador(*num):
         print(f' {valor}', end='')
     print(' - FIM!')
 
-
 contador(2, 1, 9)
 contador(7, 0, 3, 8,)
 contador(1)
+
+
+
+linha()
+print(' Funçoes com listas')
+def dobra(lista):
+
+    pos = 0
+    while pos < len(lista):
+        lista[pos] *= 2
+        pos += 1
+
+
+valores = [6, 3, 9, 1, 0, 2]
+dobra(valores)
+print(valores)
 
 
 
