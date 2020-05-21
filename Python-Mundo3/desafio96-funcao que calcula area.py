@@ -3,19 +3,20 @@
     que receba as dimensoes de um terreno retangular(largura e comprimento) e
     mostre a área do terreno
 '''
+print('CONTROLE DE TERRENO')
+
 def area (l, c):
     s = l * c
 
-    print(f'Largura = {l}')
-    print(f'Comprimento = {c}')
-    print(f'Area = {s}')
+    print(f'Largura = {l} M')
+    print(f'Comprimento = {c} M')
+    print(f'Area Total = {s:.2f} M')
 
 
-lar = float(input('Largura:' ))
-com = float(input('Comprimento'))
+lar = float(input('Largura: '))
+com = float(input('Comprimento: '))
 
 area(lar, com)
 
 
 
-print('CONTROLE DE TERRENO')
