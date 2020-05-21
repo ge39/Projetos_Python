@@ -13,8 +13,8 @@ def area (l, c):
     print(f'Area Total = {s:.2f} M')
 
 
-lar = float(input('Largura: '))
-com = float(input('Comprimento: '))
+lar = float(input('Largura(M): '))
+com = float(input('Comprimento(M): '))
 
 area(lar, com)
 
