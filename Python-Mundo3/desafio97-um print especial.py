@@ -4,10 +4,11 @@
 '''
 
 def escreva(txt,l):
-    print(txt)
+    print('-' * l)
+    print(f'  {txt}')
     print('-' * l)
 
 
 texto = str(input('texto: '))
-linha = len(texto)
+linha = len(texto) + 4
 escreva(texto, linha)
