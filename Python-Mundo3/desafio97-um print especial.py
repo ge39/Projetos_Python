@@ -3,12 +3,13 @@
     que receba um texto qualquer como parametro e mostre uma mensagem com tamanho adaptavel
 '''
 
-def escreva(txt,l):
+def escreva(txt):
+    l = len(texto) + 4
     print('-' * l)
     print(f'  {txt}')
     print('-' * l)
 
 
 texto = str(input('texto: '))
-linha = len(texto) + 4
-escreva(texto, linha)
+
+escreva(texto)
