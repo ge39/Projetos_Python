@@ -8,15 +8,29 @@
     C) Uma contagem personalizada
 
 '''
+from time import sleep
 
 def contador(i, f, p):
-    print(contador)
+    print(f'contagem de {i} até {f} de {p} em {p}')
+    sleep(1.5)
 
-i = int(input('Digite o inicio: '))
-f = int(input('Digite o fim: '))
-p = int(input('Digite o passo: '))
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont}', end=" ", flush=True)
+            sleep(0.25)
+            cont += p
+        print('FIM')
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont}', end=" ", flush=True)
+            sleep(0.25)
+            cont -= p
+        print('FIM!')
 
-for contador in range(i, f, p):
-    print(contador, end="")
-    print(end="")
-print(f'contagem de {i} até {f} de {p} em {p}  - FIM', end="")
+
+#programa principal
+contador(1, 10, 1)
+contador(100, 1, 5)
+
