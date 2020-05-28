@@ -9,9 +9,13 @@
 
 '''
 from time import sleep
+def linha():
+    print('*' * 60)
 
 def contador(i, f, p):
     print(f'contagem de {i} até {f} de {p} em {p}')
+
+
     sleep(1.5)
 
     if i < f:
@@ -21,6 +25,7 @@ def contador(i, f, p):
             sleep(0.25)
             cont += p
         print('FIM')
+        linha()
     else:
         cont = i
         while cont >= f:
@@ -28,7 +33,7 @@ def contador(i, f, p):
             sleep(0.25)
             cont -= p
         print('FIM!')
-
+        linha()
 
 #programa principal
 contador(1, 10, 1)
