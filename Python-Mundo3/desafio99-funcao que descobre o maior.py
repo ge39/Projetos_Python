@@ -4,10 +4,24 @@
     Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 '''
 #desempacotar parametros
+from time import sleep
 def maior(*num):
-    print('Analisando os valores....')
+    cont = maior = 0
+    print('\nAnalisando os valores....')
     for valor in num:
-        print(num, end=" ")
+        sleep(0.5)
+        print(valor, end=" ", flush=True)
+        if cont == 0:
+            maior = valor
+        else:
+            if valor > maior:
+                maior = valor
+        cont += 1
+    print(f'\nForam informados {cont} valores ao todo.')
+    print(f'O maior valor informado foi {maior}.')
+
+
+
 
 
 
