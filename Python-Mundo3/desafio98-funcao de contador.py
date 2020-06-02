@@ -10,7 +10,7 @@
 '''
 from time import sleep
 def ln():
-    print('=' *40)
+    print('=' * 40)
 def contador(i, f, p):
     print(f'inicio {i} fim {f} de {p} até {p}')
     sleep(1.0)
