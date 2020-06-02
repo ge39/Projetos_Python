@@ -9,33 +9,37 @@
 
 '''
 from time import sleep
-def linha():
-    print('*' * 60)
-
+def ln():
+    print('=' *40)
 def contador(i, f, p):
-    print(f'contagem de {i} até {f} de {p} em {p}')
-
-
-    sleep(1.5)
-
-    if i < f:
-        cont = i
-        while cont <= f:
-            print(f'{cont}', end=" ", flush=True)
-            sleep(0.25)
-            cont += p
-        print('FIM')
-        linha()
-    else:
+    print(f'inicio {i} fim {f} de {p} até {p}')
+    sleep(1.0)
+    if p == 0:
+        p = 1
+    if p < 0:
+        p *= -1
+    if i > f:       # inicio maior que o fim
         cont = i
         while cont >= f:
-            print(f'{cont}', end=" ", flush=True)
             sleep(0.25)
+            print(f'{cont}', end=" ")
             cont -= p
-        print('FIM!')
-        linha()
+    if i <= f:      # se inicio for menor ou igual ao fim
+        cont = i
+        while cont <= f:
+            sleep(0.25)
+            print(f'{cont}', end=" ", flush=True)
+            cont += p
+        print('FIM')
 
-#programa principal
+#main program
 contador(1, 10, 1)
-contador(100, 1, 5)
+contador(10, -10, 2)
+print()
+ln()
+print('AGORA É SUA VEZ DE CRIAR O CONTADOR')
+ini = int(input('Inicio: '))
+fin = int(input('Fim: '))
+pas = int(input('Passo: '))
+contador(ini, fin, pas)
 
