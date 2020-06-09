@@ -3,3 +3,12 @@
     A primeira função vai sortear 5 numeros, e vai coloca-los dentro da lista.
     A segunda função vai mostrar a soma entre todos os valores Pares sorteados pela função anterior.
 '''
+
+from random import randint
+
+
+
+def sorteia():
+
+#def somapar():
+numeros = list()
