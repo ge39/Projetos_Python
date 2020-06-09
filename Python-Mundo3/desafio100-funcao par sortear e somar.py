@@ -5,10 +5,19 @@
 '''
 
 from random import randint
+from time import sleep
+def sorteia(lista):
+    print('Sorteando 5 valores ad Lista: ', end=" ")
+    for cont in range(0, 5):
+        n = randint(1, 10)
+        lista.append(n)    # copiando os valores para outra lista
+        print(f'{n}', end=" ", flush=True)
+        sleep(0.3)
+    print(' - PRONTO!!')
+
+#def somaPar():
+
+numeros = list()    # lista
+sorteia(numeros)    # invocando a funcao sorteia
 
 
-
-def sorteia():
-
-#def somapar():
-numeros = list()
