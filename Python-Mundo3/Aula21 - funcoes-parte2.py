@@ -29,7 +29,7 @@ def contador(i, f, p):
     :param p: passo da contagem
     :return: sem retorno
     """
-    c =i
+    c = i
     while c <= f:
         print(f'{c}', end='..')
         c += p
@@ -42,6 +42,18 @@ print('CONSTRUINDO UMA DOCSTRINGS')
 '''
     PARA CONSTRUIR UMA DOCSTRINGS, LOGO ABAIXO DA DEF DA FUNÇÃO, CRIE 3 ASPAS TRIPLAS
 '''
+ln()
+print('PARAMETROS OPCIONAIS')
 
+def somar(a=0, b=0, c=0): # O c=0 é o parametro opcional, se nao haver valor no parametro A,B ou C, ele assume o valor zero
+    s = a + b + c
+    print(f'A soma vale {s}')
+
+somar(3, 2, 5)
+somar(8, 4)
+somar()
+
+ln()
+print('ESCOPO DE VARIAVEL')
 
 
