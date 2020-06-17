@@ -40,8 +40,16 @@ contador(2, 10, 2)
 help(contador)
 print('CONSTRUINDO UMA DOCSTRINGS')
 '''
-    PARA CONSTRUIR UMA DOCSTRINGS, LOGO ABAIXO DA DEF DA FUNÇÃO, CRIE 3 ASPAS TRIPLAS
+    PARA CONSTRUIR UMA DOCSTRINGS, LOGO ABAIXO DA DEF DA FUNÇÃO, DIGITE ASPAS DUPLAS 3 VEZES
 '''
+#exemplo
+"""
+    -> Faz uma contagem e mostra na tela
+    :param i: inicio da contagem
+    :param f: fim da contagem
+    :param p: passo da contagem
+    :return: sem retorno
+    """
 ln()
 print('PARAMETROS OPCIONAIS')
 
@@ -55,5 +63,29 @@ somar()
 
 ln()
 print('ESCOPO DE VARIAVEL')
+"""
+ESCOPO DE VARIAVEL - É  LOCAL ONDE A VARIAVEL VAI EXISTIR
+"""
+#Escopo local - definida dentro da area de uma função
+
+#Escopo Global - variavel declarada  dentro da area do programa principal, abaixo a def
+
+"""
+ para usar uma variavel global dentro de um escopo local, faça
+ 
+ declare que sua variavel é do tipo global:
+ 
+ def texte(a):
+    global a
+    a=8
+    b+=4
+    c = 2
+
+
+#menu principal
+a = 5 
+"""
+
+
 
 
