@@ -84,6 +84,8 @@ ESCOPO DE VARIAVEL - É  LOCAL ONDE A VARIAVEL VAI EXISTIR
 
 #menu principal
 a = 5 
+
+Agora a variavel global assume o valor de 8, 
 """
 
 
