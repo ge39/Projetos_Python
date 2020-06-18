@@ -81,12 +81,29 @@ ESCOPO DE VARIAVEL - É  LOCAL ONDE A VARIAVEL VAI EXISTIR
     b+=4
     c = 2
 
-
+https://www.youtube.com./watch?v=etjJ_4Eqrk8&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=123
 #menu principal
 a = 5 
 
 Agora a variavel global assume o valor de 8, 
+def teste(b):
+    gloabal a
+    a = 8
+    b+=4
+    c=2
+    print(f'A dentro vale {a}')
+    print(f'B dentro vale {B}')
+    print(f'C dentro vale {C}')
+menu principal
+
+a = 5
+text(a)
+print(f'A fora vale {8}'),  a varial global declarada dentro do escopo local, 
+anula a variavel global dentro do menu principal
 """
+
+
+video 31:46
 
 
 
