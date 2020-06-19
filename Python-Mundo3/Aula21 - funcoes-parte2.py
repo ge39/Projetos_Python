@@ -87,7 +87,7 @@ a = 5
 
 Agora a variavel global assume o valor de 8, 
 def teste(b):
-    gloabal a
+    global a
     a = 8
     b+=4
     c=2
@@ -98,12 +98,36 @@ menu principal
 
 a = 5
 text(a)
-print(f'A fora vale {8}'),  a varial global declarada dentro do escopo local, 
+print(f'A fora vale {8}'),  A varial global declarada dentro do escopo local, 
 anula a variavel global dentro do menu principal
 """
 
+def teste(b):
+    global a
+    a = 8
+    b+=4
+    c=2
+    print(f'A dentro vale {a}')
+    print(f'B dentro vale {b}')
+    print(f'C dentro vale {c}')
 
-video 31:46
+
+#menu principal
+a = 5
+teste(a)
+print(f'A fora vale {a}')
+ln()
+
+print('RETORNO DE VALORES')
+
+def somar(a=0,b=0,c=0):
+    s = a + b + c
+    return s
+
+r1 = somar(3, 2, 5)
+r2 = somar(4, 3, 7)
+r3 = somar(6)
+print(f'Os resultados foram {r1}, {r2} e {r3}')
 
 
 
