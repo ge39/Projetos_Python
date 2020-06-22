@@ -129,6 +129,19 @@ r2 = somar(4, 3, 7)
 r3 = somar(6)
 print(f'Os resultados foram {r1}, {r2} e {r3}')
 
+ln()
+print('FUNÇAO RETORNA PAR')
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+num = int(input('Digite um numero: '))
+if par(num):
+    print('É Par!')
+else:
+    print('Não é Par!!')
 
 
 
