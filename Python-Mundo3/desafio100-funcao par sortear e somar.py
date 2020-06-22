@@ -10,7 +10,7 @@ def sorteia(lista):
     print('Sorteando 5 valores ad Lista: ', end=" ")
     for cont in range(0, 5):
         n = randint(1, 10)
-        lista.append(n) # copiando os valores para a função sorteia
+        lista.append(n)  # copiando os valores para a função sorteia
         print(f'{n}', end=" ", flush=True)
         sleep(0.3)
     print(' - PRONTO!!')
