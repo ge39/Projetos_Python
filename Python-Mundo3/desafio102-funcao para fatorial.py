@@ -22,8 +22,7 @@ def fatorial(n, show=False):
                 print(' x ', end="")
             else:
                 print(' = ', end="")
-
-        f *=c
+        f *= c
     return f
 
 #Programa Principal
