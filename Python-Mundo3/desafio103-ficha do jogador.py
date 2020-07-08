@@ -6,10 +6,25 @@
     tenha sido informado corretamente.
 '''
 
-def ficha(nome='desconhecido',gols=0):
+def ficha(jog='<desconhecido>', gol=0):
+    print(f'Nome do jogador {jog} e fez {gol} gols ')
 
 
 #programa principal
-name= str(input(''))
+n = str(input('Nome jogador :'))
+g = str(input('Quantos gols! :'))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '': #se tirou todos os espaços e ficou vazio
+    ficha(gol=g)
+else:
+    ficha(n, g)
+
+
+
+
+
 
 
