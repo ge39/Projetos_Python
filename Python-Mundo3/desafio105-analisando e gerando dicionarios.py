@@ -37,4 +37,4 @@ def notas(*n,sit=False):
 #Programa principal
 resp = notas(2.5, 4.5, 2.5, 2.5, 6.5, sit = True)
 print(resp)
-help(notas)
+help(notas) #docstring ou helper()
