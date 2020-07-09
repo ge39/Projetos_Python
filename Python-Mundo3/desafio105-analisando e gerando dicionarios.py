@@ -7,5 +7,19 @@
      a menor nota
      A média da turma
      A situação(opcional)
-     Adicone tambem a docstring da função
+     Adicione tambem a docstring da função
 '''
+def notas(*n,sit=False):
+    r = dict() #criando um dicionario para receber todas as notas
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['média'] = sum(n)/len(n)
+
+    return r
+
+
+
+#Programa principal
+resp = notas(2.5, 4.5, 2.5, 10)
+print(resp)
