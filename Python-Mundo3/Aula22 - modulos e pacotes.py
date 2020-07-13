@@ -30,3 +30,8 @@ num = int(input("Digite um valor: "))
 fat = fatorial(num)
 print(f"O Fatorial de {num} é {fat}")
 ln()
+print('PACOTES - pastas que contem varios modulos')
+'''
+    dentro do pacote pode selecionar um unico modulo com o comando from pacote import modulo
+'''
+ln()
