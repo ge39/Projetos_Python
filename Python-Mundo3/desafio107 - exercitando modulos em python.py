@@ -5,10 +5,23 @@
     Faça tambem um programa que importe esse módulo e use algumas dessas funções
     
 '''
-from mod110 import aumentar
+def aumentar(n):
+    s = n * 0.10 + n
+    return (s)
+
+def diminuir(n):
+    n - 1
+    return(numero)
+
+def dobro():
+    n * 2
+    return(numero)
+
+def metade():
+    n / 2
+    return(numero)
+
 
 numero = float(input('Digite um Valor: '))
-n = (numero)
 
-
-print(f'O Valor é {moeda.n}')
+print(f'10 % de R$ {numero} é R$ {aumentar(numero)}')
