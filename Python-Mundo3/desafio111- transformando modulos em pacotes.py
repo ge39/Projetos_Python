@@ -1,5 +1,5 @@
 '''
-    Crie um pacote chamado utilidadesCev wue tenha dois modulos internos
+    Crie um pacote chamado utilidadesCev wue tenha dois mod110 internos
     chamado moeda e dado.
 
     Transfira todos as funções utilizadas nos desafios 107, 108 e 109 para

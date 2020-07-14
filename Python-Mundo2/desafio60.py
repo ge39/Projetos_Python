@@ -3,7 +3,7 @@
 	Faça um programa que leia um numero qualquer e leia seu fatorial
 	ex: 5! = 5x4x3x2x1 = 120
 
-utilizando o modulo math
+utilizando o mod110 math
 
 from math import factorial
 n = int(input('Digite um numero :'))
