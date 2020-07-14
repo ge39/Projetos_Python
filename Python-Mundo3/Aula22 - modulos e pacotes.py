@@ -4,7 +4,7 @@
     2 - Sistemas ficando cada vez maior:
         o foco principal é dividir um programa grande com muitas funcionalidades
     em pequenos programas
-    3 - aumentar a legibilidade: divide em modulos com determinado assunto
+    3 - aumentar a legibilidade: divide em mod110 com determinado assunto
     4 - Facilitar a Manutenção: pegar um problemao e dividir em pequenos problemas
 
     VANTAGENS:
@@ -30,8 +30,8 @@ num = int(input("Digite um valor: "))
 fat = fatorial(num)
 print(f"O Fatorial de {num} é {fat}")
 ln()
-print('PACOTES - é uma pastas que contem varios modulos')
+print('PACOTES - é uma pastas que contem varios mod110')
 '''
-    dentro do pacote pode selecionar um unico modulo com o comando from pacote import modulo
+    dentro do pacote pode selecionar um unico mod110 com o comando from pacote import mod110
 '''
 ln()
