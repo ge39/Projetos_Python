@@ -1,5 +1,5 @@
 def aumentar(n):
-    n *= 0.10
+    n * 10
     return (numero)
 
 def diminuir(n):
