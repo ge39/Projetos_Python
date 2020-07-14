@@ -1,6 +1,6 @@
 def aumentar(n):
-    n * 10
-    return (numero)
+    s = n * 0.10 + n
+    return (s)
 
 def diminuir(n):
     n - 1
@@ -13,3 +13,4 @@ def dobro():
 def metade():
     n / 2
     return(numero)
+
