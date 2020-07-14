@@ -4,7 +4,7 @@ def aumentar(n):
 
 def diminuir(n):
     n - 1
-    return (numero)
+    return(numero)
 
 def dobro():
     n * 2
