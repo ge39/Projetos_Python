@@ -6,3 +6,7 @@
     
 '''
 import mod110
+
+numero = float(input('Digite um Valor: '))
+n = (numero)
+print(f'O Valor é {n}')
