@@ -5,8 +5,10 @@
     Faça tambem um programa que importe esse módulo e use algumas dessas funções
     
 '''
-import mod110
+from mod110 import aumentar
 
 numero = float(input('Digite um Valor: '))
 n = (numero)
-print(f'O Valor é {n}')
+
+
+print(f'O Valor é {moeda.n}')
