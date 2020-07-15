@@ -1,16 +1,16 @@
-def aumentar(n, valor):
-    s = n * 0.10 + n
-    return (s)
+def aumentar(preco, taxa):
+    res = preco + (preco * taxa/100)
+    return (res)
 
-def diminuir(n):
-    s = n * 0.10 - n
-    return(s)
+def diminuir(preco, taxa):
+   res = preco - (preco * taxa/100)
+   return(res)
 
-def dobro(n):
-   s = n * 2
-   return(s)
+def dobro(preco):
+   res = preco * 2
+   return(res)
 
-def metade(n):
-    s = n / 2
-    return(s)
+def metade(preco):
+    res = preco / 2
+    return(res)
 
