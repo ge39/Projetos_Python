@@ -5,4 +5,4 @@
 '''
 from exe110 import moeda
 
-numero = float(input("Digite um valor: R$ "))
+numero = float(input("Digite o Preço: R$ "))
