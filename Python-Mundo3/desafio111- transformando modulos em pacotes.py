@@ -6,3 +6,7 @@
     o primeiro pacote e mantenha tudo funcionando.
 
 '''
+from exe111.utilidadescev import moeda
+
+numero = float(input("Digite o Preço: R$ "))
+moeda.resumo(numero, 10, 30)
