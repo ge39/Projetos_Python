@@ -19,6 +19,11 @@ def moeda(preco = 0 ,moeda = 'R$', formato = False):
  return f'{moeda}{preco:>6.2f}'.replace('.', ',')
 
 
+def resumo(preco=0, taxaA=10, taxaR=5):
+    print('-' * 30)
+    print('Resumo do Valor'.center(30))
+    print('-' * 30)
+    print(f'Preço Analisado: {moeda.preco}')
 
 
 

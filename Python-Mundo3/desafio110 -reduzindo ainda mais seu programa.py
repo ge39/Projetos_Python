@@ -6,3 +6,4 @@
 from exe110 import moeda
 
 numero = float(input("Digite o Preço: R$ "))
+moeda.resumo()
