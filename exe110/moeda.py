@@ -27,11 +27,11 @@ def resumo(preco=0, taxaA=10, taxaR=5):
     print('-' * 30)
     print('Resumo do Valor'.center(30))
     print('-' * 30)
-    print(f'Preço Analisado: \t{moeda(preco)}')
-    print(f'Dobro do preço   \t{dobro(preco, True)}')
-    print(f'Metade do preço  \t{metade(preco, True)}')
-    print(f'Com {taxaA}% do preço: \t{aumentar(preco,taxaA, True)}')
-    print(f'Com {taxaR}% do preço   \t{diminuir(preco, taxaR, True)}')
+    print(f'Preço Analisado:           \t{moeda(preco)}')
+    print(f'Dobro do preço             \t{dobro(preco, True)}')
+    print(f'Metade do preço            \t{metade(preco, True)}')
+    print(f'Com {taxaA}% aumento do preço: \t{aumentar(preco,taxaA, True)}')
+    print(f'Com {taxaR}% desconto do preço:\t{diminuir(preco, taxaR, True)}')
     print('-' *30)
 
 
