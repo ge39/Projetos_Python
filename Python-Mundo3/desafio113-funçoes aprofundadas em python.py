@@ -4,3 +4,7 @@
     de um numero de tipo inválido.
     aproveite e crie uma função leiaFloat(), com a mesma funcionalidade
 '''
+
+from exe113 import number
+
+n = numero.number
