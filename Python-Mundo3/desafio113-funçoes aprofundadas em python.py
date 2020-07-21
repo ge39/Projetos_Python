@@ -5,4 +5,5 @@
     aproveite e crie uma função leiaFloat(), com a mesma funcionalidade
 '''
 
-n = numero.number
+from exe113 import inteiro
+n = inteiro.leiaInt("Digite um numero: ")
