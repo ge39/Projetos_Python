@@ -5,5 +5,12 @@
     aproveite e crie uma função leiaFloat(), com a mesma funcionalidade
 '''
 
-from exe113 import inteiro
-n = inteiro.leiaInt("Digite um numero: ")
+def leiaInt():
+    while True:
+        try:
+            n = int(input("Digite um numero: "))
+        except(ValueError, TypeError):
+            print('ERROR!!, Digite um numero inteiro valido')
+            continue
+        else:
+            return n
