@@ -4,5 +4,5 @@ def linha(tam = 42):
 
 def cabecalho(txt):
     print(linha())
-    print(txt)
+    print(txt.center(42))
     print(linha())
