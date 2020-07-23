@@ -1,4 +1,4 @@
 from exe115.lib.interface import *
 
 
-menu(['opc01', 'opc02', 'opc03'])
+menu(['Criar Arquivo', 'Cadastrar Pessoas', 'Listar Pessoas', 'Sair do Sistema'])
