@@ -1,3 +1,4 @@
 from exe115.lib.interface import *
 
-cabecalho('Testando 123')
+
+menu(['opc01', 'opc02', 'opc03'])
