@@ -5,6 +5,8 @@
     aproveite e crie uma função leiaFloat(), com a mesma funcionalidade
 '''
 from exe113 import numeros
+
+
 #programa principal
 n1 = numeros.leiaInt("Digite um numero: ")
 n2 = numeros.leiaFloat("Digite um valor Real: ")
