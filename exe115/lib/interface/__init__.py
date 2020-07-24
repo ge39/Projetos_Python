@@ -15,3 +15,19 @@ def menu(lista):
         print(f'{c} - {item}')
         c += 1
     print(linha())
+
+
+def opcao(opc):
+
+    while = True:
+
+        try:
+         entrada = int(input(opc))
+        if entrada > 4:
+            print(f'Valor informado {entrada} invalido')
+            continue
+        else:
+            break
+
+
+
