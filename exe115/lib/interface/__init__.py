@@ -19,7 +19,7 @@ def menu(lista):
 
 def opcao(opc):
 
-    while = True:
+    while True:
 
         try:
          entrada = int(input(opc))
