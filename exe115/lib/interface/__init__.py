@@ -22,12 +22,12 @@ def opcao(opc):
     while True:
 
         try:
-         entrada = int(input(opc))
-        if entrada > 4:
-            print(f'Valor informado {entrada} invalido')
-            continue
-        else:
-            break
+            entrada = int(input(opc))
+            if entrada > 4:
+                print(f'Valor informado {entrada} invalido')
+                continue
+            else:
+                break
 
 
 
