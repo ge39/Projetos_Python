@@ -10,8 +10,8 @@ while True:
     elif resposta == 2:
         cabecalho(f'Opcao 2')
     elif resposta == 3:
-        cabecalho(f'Opcao 3')
-        cabecalho(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
+        #cabecalho(f'Opcao 3')
+        print(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
     else:
         cabecalho('\033[31mERROR!! Digite uma opção válida')
         sleep(2)
