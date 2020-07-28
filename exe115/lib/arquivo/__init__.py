@@ -1,6 +1,5 @@
 from exe115.lib.interface import*
 
-
 def arquivoExiste(nome):
     try:
         a = open(nome, 'rt')
