@@ -11,13 +11,14 @@ if not arquivoExiste(arq):
     criarArquivo(arq)
 
 while True:
-    resposta = menu(['Ver pessoas cadastradas', 'Cadastrar noca pessoas', 'Sair do Sistema'])
+    resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoas', 'Sair do Sistema'])
     print('processando.....')
     sleep(1.5)
     if resposta == 1:
-        cabecalho(f'opção 1')
+        #Opção de listar o conteudo de um arquivo!
+        lerArquivo(arq)
     elif resposta == 2:
-        cabecalho(f'Opcao 2')
+        lerArquivo(arq)
     elif resposta == 3:
         #cabecalho(f'Opcao 3')
         print(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
