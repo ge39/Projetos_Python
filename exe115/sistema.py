@@ -1,6 +1,11 @@
 from exe115.lib.interface import *
+from exe115.lib.arquivo import *
 from time import sleep
 
+arq = 'cursoemvideo.txt'
+
+if arquivoExiste(arq):
+    print('Arquivo encontrado com sucesso')
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar noca pessoas', 'Sair do Sistema'])
     print('processando.....')
