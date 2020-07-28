@@ -4,10 +4,11 @@ from time import sleep
 
 arq = 'cursoemvideo.txt'
 
-if arquivoExiste(arq):
-    print('Arquivo encontrado com sucesso')
-else:
-    print('Arquivo não encontrado')
+if not arquivoExiste(arq):
+    #print('Arquivo encontrado com sucesso')
+#else:
+    #print('Arquivo não encontrado')
+    criarArquivo(arq)
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar noca pessoas', 'Sair do Sistema'])
