@@ -1,4 +1,5 @@
 def leiaInt(msg):
+
     while True:
         try:
             n = int(input(msg))
@@ -26,7 +27,7 @@ def menu(lista):
     cabecalho('\033[34mMENU PRINCIPAL\033[m')
     c = 1
     for item in lista:
-        print(f'\033[31m{c}\033[m - {item}')
+        print(f'\033[34m{c}\033[m - {item}')
         c += 1
     print(linha())
     opc = leiaInt('\033[34mSua opção:\033[m ')
