@@ -4,3 +4,5 @@ def arquivoExiste(nome):
         a.close()
     except FileNotFoundError:
         return False
+    else:
+        return True
