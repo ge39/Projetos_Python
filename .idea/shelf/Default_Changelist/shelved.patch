@@ -1,0 +1,76 @@
+Index: .idea/Projetos_Python.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\" />\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.7\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/Projetos_Python.iml	(revision b257e00b432196b5e7bbb0417d3f041169d27634)
++++ .idea/Projetos_Python.iml	(date 1595498071663)
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.7\" project-jdk-type=\"Python SDK\" />\r\n  <component name=\"PythonCompatibilityInspectionAdvertiser\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision b257e00b432196b5e7bbb0417d3f041169d27634)
++++ .idea/misc.xml	(date 1595498071703)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+   <component name="PythonCompatibilityInspectionAdvertiser">
+     <option name="version" value="3" />
+   </component>
+Index: Python-Mundo3/desafio113-funçoes aprofundadas em python.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>'''\r\n    Reescreva a função leiaInt()\r\n    que fizemos no desafio104, incluindo agora a possibilidade da digitação\r\n    de um numero de tipo inválido.\r\n    aproveite e crie uma função leiaFloat(), com a mesma funcionalidade\r\n'''\r\nfrom exe113 import numeros\r\n\r\n\r\n#programa principal\r\nn1 = numeros.leiaInt(\"Digite um numero: \")\r\nn2 = numeros.leiaFloat(\"Digite um valor Real: \")\r\nprint(f'O valor inteiro foi \\033[33m{n1}\\033[m e o valor real foi \\033[34m{n2:.2f}\\033[m')\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Python-Mundo3/desafio113-funçoes aprofundadas em python.py	(revision b257e00b432196b5e7bbb0417d3f041169d27634)
++++ Python-Mundo3/desafio113-funçoes aprofundadas em python.py	(date 1595510052344)
+@@ -12,3 +12,5 @@
+ n2 = numeros.leiaFloat("Digite um valor Real: ")
+ print(f'O valor inteiro foi \033[33m{n1}\033[m e o valor real foi \033[34m{n2:.2f}\033[m')
+ 
++n3 = numeros.leiaNumber(("digite um numero ou letra: "))
++
+Index: exe113/numeros/__init__.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>def leiaInt(msg):\r\n    while True:\r\n        try:\r\n            n = int(input(msg))\r\n        except(ValueError, TypeError):\r\n            print('\\033[31mERROR!!, Digite um numero numeros valido!!\\033[m')\r\n            continue\r\n        except(KeyboardInterrupt):\r\n            print(\"\\033[31mInterrupção do sistema\\033[m\")\r\n            return 0\r\n        else:\r\n            return n\r\n\r\n\r\ndef leiaFloat(msg):\r\n    while True:\r\n        try:\r\n            n = float(input(msg).replace(',', '.'))\r\n        except(ValueError, TypeError):\r\n            print(\"\\033[31mDigite um valor Real corretamente\\033[m\")\r\n        except(KeyboardInterrupt):\r\n            return 0\r\n        else:\r\n            return n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- exe113/numeros/__init__.py	(revision b257e00b432196b5e7bbb0417d3f041169d27634)
++++ exe113/numeros/__init__.py	(date 1595515974214)
+@@ -23,3 +23,15 @@
+         else:
+             return n
+ 
++def leiaNumber(msg):
++
++    while True:
++        valido = True
++        n = input(msg)
++
++        if n.isnumeric():
++            print(f'\033[32mVoce digitou m numero inteiro - seu valor é {n}\033[m')
++        elif n.isalpha():
++            print(f'\033[33mVoce digitou um Palavra - sua escrita é {n}\033[m')
++        else:
++             print(f'\033[35mVoce digitou um numero real - seu valor é {n:.2f}\033[m')
