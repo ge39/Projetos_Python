@@ -24,4 +24,4 @@ while True:
         print(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
     else:
         cabecalho('\033[31mERROR!! Digite uma opção válida')
-        sleep(2)
+        #sleep(2)
