@@ -1,6 +1,4 @@
-Gustavo; 41
-Mario; 56
-Jose; 89
-Luciana; 32
-Mislene; 43
-Milena; 16
+JOSE;35
+MAURO;21
+JOSE MARIA REIS;45
+JEREMIAS;49
