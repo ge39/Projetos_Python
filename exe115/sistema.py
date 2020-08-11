@@ -13,11 +13,13 @@ if not arquivoExiste(arq):
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoas', 'Sair do Sistema'])
     print('processando.....')
+
     sleep(1.5)
     if resposta == 1:
         #Opção de listar o conteudo de um arquivo!
         lerArquivo(arq)
     elif resposta == 2:
+        #Opção de ler o conteudo de um arquivo!
         lerArquivo(arq)
     elif resposta == 3:
         #cabecalho(f'Opcao 3')
