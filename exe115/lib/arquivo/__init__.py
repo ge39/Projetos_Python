@@ -1,4 +1,5 @@
-from exe115.lib.interface import*
+from exe115.lib.interface import *
+
 
 def arquivoExiste(nome):
     try:
@@ -12,14 +13,16 @@ def arquivoExiste(nome):
 
 def criarArquivo(nome):
     try:
-        a = open(nome, 'wt+') # cria um arquivo novo
+        a = open(nome, 'wt+')  # cria um arquivo novo
         a.close()
     except:
         print('Houve um erro na criação do arquivo!')
     else:
         print(f'Arquivo \033[32m{nome}\033[m criado com sucesso!')
 
+
 def lerArquivo(nome):
+    global a
     try:
         a = open(nome, 'rt')
     except:
@@ -33,9 +36,10 @@ def lerArquivo(nome):
     finally:
         a.close()
 
+
 def cadastrar(arq, nome="desconhecido", idade=0):
     try:
-        a = open(arq, 'at') #append - incluir registro no arquivo de texto
+        a = open(arq, 'at')  # append - incluir registro no arquivo de texto
     except:
         print('Houve um ERRO na abertura do arquivo!')
     else:
