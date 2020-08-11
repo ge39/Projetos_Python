@@ -20,11 +20,15 @@ while True:
         lerArquivo(arq)
     elif resposta == 2:
         #Opção de cadastrar uma nova pessoa!
-        lerArquivo(arq)
+       cabecalho('NOVO CADASTRO')
+       nome = str(input('Nome: ').upper().strip())
+       idade = int(input('Idade: '))
+       cadastrar(arq,nome,idade)
     elif resposta == 3:
         #opcao de sair do sistema
         #cabecalho(f'Opcao 3')
         print(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
+        break
     else:
         cabecalho('\033[31mERROR!! Digite uma opção válida')
-        #sleep(2)
+        sleep(2)
