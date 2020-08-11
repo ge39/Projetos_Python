@@ -19,9 +19,10 @@ while True:
         #Opção de listar o conteudo de um arquivo!
         lerArquivo(arq)
     elif resposta == 2:
-        #Opção de ler o conteudo de um arquivo!
+        #Opção de cadastrar uma nova pessoa!
         lerArquivo(arq)
     elif resposta == 3:
+        #opcao de sair do sistema
         #cabecalho(f'Opcao 3')
         print(f'\033[0;30;46mSaindo do Sistema, Até Logo\033[m')
     else:
